@@ -70,7 +70,7 @@ export default function Testimonials() {
             >
               <div className="mb-6 relative">
                 <Quote className="h-12 w-12 text-brand/20 absolute -top-2 -left-2 transform -scale-x-100" />
-                <p className="relative text-lg italic text-foreground/90 pl-4">"{testimonial.quote}"</p>
+                <p className="relative text-lg italic text-foreground/90 pl-4">&quot;{testimonial.quote}&quot;</p>
               </div>
               
               <div className="flex flex-col mt-auto">

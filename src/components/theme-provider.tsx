@@ -29,6 +29,7 @@ export function ThemeProvider({
   children,
   defaultTheme = "system",
   storageKey = "theme",
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   attribute = "class",
   enableSystem = true,
   disableTransitionOnChange = false,

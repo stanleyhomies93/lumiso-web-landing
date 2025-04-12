@@ -26,7 +26,7 @@ export default function CTA() {
               Ready to Transform Your Digital Presence?
             </h2>
             <p className="text-xl text-brand-foreground/90 mb-10 max-w-2xl mx-auto">
-              Let's collaborate to build innovative solutions that drive your business forward.
+              Let&apos;s collaborate to build innovative solutions that drive your business forward.
               Start your journey with Lumiso today.
             </p>
             
