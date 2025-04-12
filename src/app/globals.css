@@ -32,10 +32,19 @@
 
 @layer base {
   * {
-    @apply border-[#e5e7eb20] dark:border-[#1f2937] dark:border-opacity-10;
+    @apply border-[#e5e7eb33];
   }
+  
+  .dark * {
+    @apply border-[#1f293719];
+  }
+  
   body {
-    @apply bg-[#ffffff] text-[#0f172a] dark:bg-[#0f172a] dark:text-[#f8fafc];
+    @apply bg-[#ffffff] text-[#0f172a];
+  }
+  
+  .dark body {
+    @apply bg-[#0f172a] text-[#f8fafc];
   }
 }
 
