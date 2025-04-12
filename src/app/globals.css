@@ -31,9 +31,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-muted;
-  }
   body {
     @apply bg-background text-foreground;
   }
