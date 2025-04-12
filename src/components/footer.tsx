@@ -97,7 +97,7 @@ export default function Footer() {
           ))}
         </div>
         
-        <div className="border-t border-border/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-neutral-200 dark:border-neutral-700/50 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/60 text-sm mb-4 md:mb-0">
             &copy; {currentYear} Lumiso. All rights reserved.
           </p>

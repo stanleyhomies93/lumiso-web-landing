@@ -80,7 +80,7 @@ export default function Process() {
                 viewport={{ once: true }}
               >
                 {/* Circle connector for desktop */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-background border-2 border-border items-center justify-center">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-background border-2 border-neutral-200 dark:border-neutral-700 items-center justify-center">
                   {step.icon}
                 </div>
                 
