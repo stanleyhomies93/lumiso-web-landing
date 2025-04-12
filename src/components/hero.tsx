@@ -7,23 +7,23 @@ export default function Hero() {
   return (
     <div className="relative min-h-screen pt-20 overflow-hidden">
       {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand/5 via-background to-background -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#4040ff]/10 via-[#0f1623] to-[#0f1623] -z-10"></div>
       
       {/* Animated background grid */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       </div>
       
       {/* Orbs for decoration */}
       <motion.div 
-        className="absolute top-[15%] right-[10%] h-[300px] w-[300px] rounded-full bg-brand/5 blur-[100px] -z-10"
+        className="absolute top-[15%] right-[10%] h-[300px] w-[300px] rounded-full bg-[#4040ff]/10 blur-[100px] -z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.8 }}
         transition={{ duration: 1.5, delay: 0.2 }}
       />
       
       <motion.div 
-        className="absolute bottom-[15%] left-[10%] h-[250px] w-[250px] rounded-full bg-brand/10 blur-[120px] -z-10"
+        className="absolute bottom-[15%] left-[10%] h-[250px] w-[250px] rounded-full bg-[#4040ff]/20 blur-[120px] -z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.5 }}
         transition={{ duration: 1.5, delay: 0.5 }}
@@ -34,25 +34,25 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-brand bg-brand/10 rounded-full"
+          className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-white bg-[#4040ff]/20 rounded-full"
         >
           Crafting Digital Excellence
         </motion.div>
         
         <motion.h1 
-          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tighter mb-6"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tighter mb-6 text-white"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           We Build <span className="relative">
             <span className="relative z-10">Exceptional</span>
-            <span className="absolute bottom-2 md:bottom-3 left-0 h-3 w-full bg-brand/20 -z-10"></span>
+            <span className="absolute bottom-2 md:bottom-3 left-0 h-3 w-full bg-[#4040ff]/30 -z-10"></span>
           </span> Software Solutions
         </motion.h1>
         
         <motion.p 
-          className="max-w-2xl text-lg md:text-xl text-foreground/70 mb-10"
+          className="max-w-2xl text-lg md:text-xl text-white/80 mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -79,12 +79,12 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <p className="text-sm text-foreground/50 mb-6">TRUSTED BY INNOVATIVE COMPANIES</p>
+          <p className="text-sm text-white/50 mb-6">TRUSTED BY INNOVATIVE COMPANIES</p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-8">
             {["Company 1", "Company 2", "Company 3", "Company 4", "Company 5"].map((company, i) => (
               <motion.div 
                 key={company}
-                className="text-foreground/40 font-semibold tracking-wider text-lg"
+                className="text-white/60 font-semibold tracking-wider text-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: 0.7 + i * 0.1 }}
@@ -103,14 +103,14 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1, repeat: Infinity, repeatType: "reverse" }}
       >
-        <div className="w-5 h-9 border-2 border-foreground/20 rounded-full flex justify-center">
+        <div className="w-5 h-9 border-2 border-white/20 rounded-full flex justify-center">
           <motion.div 
-            className="w-1 h-2 bg-foreground/40 rounded-full mt-1.5"
+            className="w-1 h-2 bg-white/40 rounded-full mt-1.5"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
           />
         </div>
-        <span className="text-xs text-foreground/40">Scroll Down</span>
+        <span className="text-xs text-white/40">Scroll Down</span>
       </motion.div>
     </div>
   );

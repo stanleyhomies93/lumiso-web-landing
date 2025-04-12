@@ -9,20 +9,20 @@
 /* Theme variables */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 220 47% 8%;
+    --foreground: 0 0% 98%;
     --brand: 240 100% 50%;
     --brand-foreground: 0 0% 100%;
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted-foreground: 240 5% 64.9%;
     --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --border: 240 5.9% 90%;
+    --accent-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
     --ring: 240 100% 50%;
   }
  
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 220 47% 8%;
     --foreground: 0 0% 98%;
     --brand: 240 100% 50%;
     --brand-foreground: 0 0% 100%;
@@ -38,19 +38,11 @@
 /* Base styles */
 @layer base {
   * {
-    @apply border-[#e5e7eb33];
-  }
-  
-  .dark * {
-    @apply border-[#1f293719];
+    @apply border-[#333a47];
   }
   
   body {
-    @apply bg-[#ffffff] text-[#0f172a];
-  }
-  
-  .dark body {
-    @apply bg-[#0f172a] text-[#f8fafc];
+    @apply bg-[#0f1623] text-[#f8fafc];
   }
 }
 

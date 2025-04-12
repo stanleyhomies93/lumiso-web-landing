@@ -7,12 +7,12 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-brand text-brand-foreground hover:bg-brand/90",
-        outline: "border border-black/10 dark:border-white/10 bg-transparent hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-accent text-accent-foreground hover:bg-accent/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-foreground underline-offset-4 hover:underline",
-        glow: "relative bg-brand text-brand-foreground hover:bg-brand/90 after:content-[''] after:absolute after:inset-0 after:z-[-1] after:bg-brand/50 after:blur-lg after:opacity-0 hover:after:opacity-100 after:transition-opacity",
+        default: "bg-[#4040ff] text-white hover:bg-[#4040ff]/90",
+        outline: "border border-[#ffffff40] bg-transparent hover:bg-[#ffffff20] text-white",
+        secondary: "bg-[#2a2b3d] text-white hover:bg-[#3a3b4d]",
+        ghost: "hover:bg-[#ffffff20] text-white",
+        link: "text-white underline-offset-4 hover:underline",
+        glow: "relative bg-[#4040ff] text-white hover:bg-[#4040ff]/90 after:content-[''] after:absolute after:inset-0 after:z-[-1] after:bg-[#4040ff]/50 after:blur-lg after:opacity-50 hover:after:opacity-100 after:transition-opacity",
       },
       size: {
         default: "h-10 px-4 py-2",
