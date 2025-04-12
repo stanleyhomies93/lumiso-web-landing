@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Lightbulb, Code, CheckCircle, BarChart2 } from "lucide-react";
 
