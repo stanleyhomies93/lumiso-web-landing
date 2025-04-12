@@ -35,43 +35,25 @@ export function ThemeProvider({
   disableTransitionOnChange = false,
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (typeof window !== "undefined" && localStorage.getItem(storageKey) as Theme) || defaultTheme
-  );
+  const [theme] = useState<Theme>("dark");
 
   useEffect(() => {
+    // Always use dark theme
     const root = window.document.documentElement;
+    root.classList.remove("light");
+    root.classList.add("dark");
 
-    // Remove existing theme classes
-    root.classList.remove("light", "dark");
-
-    // Apply the appropriate theme
-    if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
-      root.classList.add(systemTheme);
-    } else {
-      root.classList.add(theme);
+    // Store theme preference
+    if (typeof window !== "undefined") {
+      localStorage.setItem(storageKey, "dark");
     }
+  }, [storageKey]);
 
-    // Apply transition effects if necessary
-    if (disableTransitionOnChange) {
-      root.classList.add("disable-transition");
-      window.setTimeout(() => {
-        root.classList.remove("disable-transition");
-      }, 0);
-    }
-  }, [theme, enableSystem, disableTransitionOnChange]);
-
-  // Store theme preference and update state
-  const value = {
-    theme,
-    setTheme: (theme: Theme) => {
-      if (typeof window !== "undefined") {
-        localStorage.setItem(storageKey, theme);
-      }
-      setTheme(theme);
+  // This site only uses dark theme
+  const value: ThemeProviderState = {
+    theme: "dark" as Theme,
+    setTheme: (_theme: Theme) => {
+      // No-op - we always use dark theme
     },
   };
 
