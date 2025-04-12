@@ -67,7 +67,7 @@ export default function Process() {
         
         <div className="relative">
           {/* Connection line for desktop */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-border/50 -translate-x-1/2"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-800/50 -translate-x-1/2"></div>
           
           <div className="space-y-12 md:space-y-0 relative">
             {steps.map((step, i) => (
@@ -80,7 +80,7 @@ export default function Process() {
                 viewport={{ once: true }}
               >
                 {/* Circle connector for desktop */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-background border-2 border-neutral-200 dark:border-neutral-700 items-center justify-center">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-background border-2 border-gray-200 dark:border-gray-800 items-center justify-center">
                   {step.icon}
                 </div>
                 

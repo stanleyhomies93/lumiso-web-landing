@@ -62,7 +62,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div 
               key={index}
-              className="bg-background relative rounded-xl p-8 border border-neutral-200 dark:border-neutral-700/50 group hover:border-brand/30 transition-colors"
+              className="bg-background relative rounded-xl p-8 border border-gray-200 dark:border-gray-800/50 group hover:border-brand/30 transition-colors"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: testimonial.delay }}
