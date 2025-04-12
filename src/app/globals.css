@@ -1,3 +1,7 @@
+/* 
+  These are Tailwind CSS directives that inject Tailwind's base, components, and utilities styles.
+  Learn more: https://tailwindcss.com/docs/functions-and-directives#tailwind
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
