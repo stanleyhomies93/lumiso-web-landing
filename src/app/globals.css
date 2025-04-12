@@ -32,7 +32,13 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground;
+    background-color: white;
+    color: black;
+  }
+  
+  .dark body {
+    background-color: #1a1a1a;
+    color: white;
   }
 }
 
