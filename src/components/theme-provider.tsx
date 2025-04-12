@@ -42,20 +42,20 @@ export function ThemeProvider({
   useEffect(() => {
     const root = window.document.documentElement;
 
+    // Remove existing theme classes
     root.classList.remove("light", "dark");
 
-    if (theme === "system" && enableSystem) {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
+    // Apply the appropriate theme
+    if (theme === "system") {
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
-
       root.classList.add(systemTheme);
-      return;
+    } else {
+      root.classList.add(theme);
     }
 
-    root.classList.add(theme);
-    
+    // Apply transition effects if necessary
     if (disableTransitionOnChange) {
       root.classList.add("disable-transition");
       window.setTimeout(() => {
@@ -64,6 +64,7 @@ export function ThemeProvider({
     }
   }, [theme, enableSystem, disableTransitionOnChange]);
 
+  // Store theme preference and update state
   const value = {
     theme,
     setTheme: (theme: Theme) => {

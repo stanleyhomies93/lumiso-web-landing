@@ -31,14 +31,11 @@
 }
 
 @layer base {
-  body {
-    background-color: white;
-    color: black;
+  * {
+    @apply border-[#e5e7eb20] dark:border-[#1f2937] dark:border-opacity-10;
   }
-  
-  .dark body {
-    background-color: #1a1a1a;
-    color: white;
+  body {
+    @apply bg-[#ffffff] text-[#0f172a] dark:bg-[#0f172a] dark:text-[#f8fafc];
   }
 }
 
